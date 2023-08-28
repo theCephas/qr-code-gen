@@ -67,11 +67,11 @@ const Home = () => {
                                                 <p className={`text-black text-center duration-500 after:block after:w-[4rem] after:rounded-full after:h-[3px] after:my-[1.5rem] after:mx-auto after:bg-black content-none pt-10 px-6 sm:px-10 font-semibold text-[10px] md:text-[12px] ${isDarkMode ? 'dark:after:bg-white' : 'light:bg'} ${isDarkMode ? 'dark:text-white' : 'light:bg'}`}>Free online
                                                         <span className={`text-green-500`}> Qr Code </span>
                                                         Generator</p>
-                                                <p className={`text-green-500 duration-400 font-bold text-[18px] leading-8 mx-6 sm:mx-auto md:text-[21px] md:w-[600px] m-auto text-center`}>Generate free, customized, and well-presentable
+                                                <p className={`text-green-500 duration-400 font-bold text-[18px] leading-7 mx-6 sm:mx-auto md:text-[21px] md:w-[600px] m-auto text-center`}>Generate free, customized, and well-presentable
                                                         <br /> qr codes to
                                                         friends, families, and business associates.
                                                 </p>
-                                                <p className={`text-black/80 text-center duration-500 pt-6 leading-8 px-6 md:px-10 md:w-[700px] m-auto text-[11px] ${isDarkMode ? 'dark:text-white/50' : 'light:bg'}`}>
+                                                <p className={`text-black/80 text-center duration-500 pt-6 leading-7 px-6 md:px-10 md:w-[700px] m-auto text-[11px] ${isDarkMode ? 'dark:text-white/50' : 'light:bg'}`}>
                                                         qrCode.Gen is created to generate beautiful and usable qr codes for friends, families, business individuals, clients, and customers.
                                                         It enables quick access to websites, folders, and many more .
                                                 </p>
@@ -86,7 +86,7 @@ const Home = () => {
                                                 <div className="flex flex-col md:flex-row justify-between items-center mt-12 mx-6 sm:mx-10">
                                                         <div>
 
-                                                                <p className="text-center text-[12px] pb-4 w-auto md:w-[400px] md:text-left">
+                                                                <p className="text-center text-[12px] pb-4 w-auto md:w-[400px] leading-7 md:text-left">
                                                                         Seamlessly connect your customers to your digital world using custom-designed
                                                                         QR codes that leave a lasting impression. From websites to social media, menus to promotional offers, our cutting-edge QR code solutions make interactions effortless and memorable.
 
@@ -94,13 +94,13 @@ const Home = () => {
                                                                 <Link to="/" className={`bg-green-500 p-4 w-[200px] shadow-lg rounded-xl hover:bg-green-700 duration-700 my-6 flex items-center justify-center m-auto md:mt-8 md:m-0 font-bold`}>Try it Now</Link>
 
                                                         </div>
-                                                        <img src="src\assets\qrcodeill.svg" className="w-[300px] sm:w-[400px] m-auto" alt="Qr Code illustration" />
+                                                        <img src="src\assets\qrcodeill.png" className="w-[300px] sm:w-[400px] m-auto" alt="Qr Code illustration" />
                                                 </div>
                                         </section>
 
                                         <section className={`${isDarkMode ? 'dark:bg-[#030d06]' : 'light:bg'} duration-700 pt-16 px-4 md:px-10 flex flex-wrap justify-center items-center`}>
 
-                                                <div className={`border border-black/20 ${isDarkMode ? 'dark:border-white/30' : 'light:bg'} text-black hover:shadow-lg cursor-pointer hover:bg-gradient-to-b from-emerald-600 to-green-800 rounded-2xl duration-700 p-10 mb-10 h-[320px] w-[275px] sm:w-[300px]`}>
+                                                <div className={`border border-black/20 ${isDarkMode ? 'dark:border-white/30' : 'light:bg'} text-black hover:shadow-lg cursor-pointer hover:bg-gradient-to-b from-emerald-600 to-green-800 rounded-2xl duration-700 p-10 mb-10 h-[370px] w-[275px] sm:w-[300px]`}>
                                                         <h4 className={`${isDarkMode ? 'dark:text-white' : 'light:bg'} text-black text-[16px] font-bold pb-4`}>For Businesses</h4>
                                                         <p className={`${isDarkMode ? 'dark:text-white/60' : 'light:bg'} text-black text-[11px] font-semibold text-black/40 pb-8`}>Transform your marketing strategies with eye-catching QR codes that engage and excite</p>
                                                         <p className={`pb-8 ${isDarkMode ? 'dark:text-white' : 'light:bg'} text-black`}>
@@ -117,7 +117,7 @@ const Home = () => {
                                                         </p>
 
                                                 </div>
-                                                <div className={`border border-black/20 ${isDarkMode ? 'dark:border-white/30' : 'light:bg'} text-black hover:shadow-lg cursor-pointer hover:bg-gradient-to-b from-emerald-600 to-green-800 rounded-2xl duration-700 p-10 mb-10 h-[320px] w-[275px] sm:w-[300px]  sm:mx-8`}>
+                                                <div className={`border border-black/20 ${isDarkMode ? 'dark:border-white/30' : 'light:bg'} text-black hover:shadow-lg cursor-pointer hover:bg-gradient-to-b from-emerald-600 to-green-800 rounded-2xl duration-700 p-10 mb-10 h-[370px] w-[275px] sm:w-[300px]  sm:mx-8`}>
                                                         <h4 className={`${isDarkMode ? 'dark:text-white' : 'light:bg'} text-black text-[16px] font-bold pb-4`}>For Individuals</h4>
                                                         <p className={`${isDarkMode ? 'dark:text-white/60' : 'light:bg'} text-black text-[11px] font-semibold text-black/40 pb-8`}>Unlocking Convenience: Embrace the Power of QR Codes</p>
                                                         <p className={`pb-8 ${isDarkMode ? 'dark:text-white' : 'light:bg'} text-black`}>
@@ -134,7 +134,7 @@ const Home = () => {
                                                         </p>
 
                                                 </div>
-                                                <div className={`border border-black/20 ${isDarkMode ? 'dark:border-white/30' : 'light:bg'} text-black hover:shadow-lg cursor-pointer hover:bg-gradient-to-b from-emerald-600 to-green-800 rounded-2xl duration-700 p-10 mb-10 h-[320px] w-[275px] sm:w-[300px]`}>
+                                                <div className={`border border-black/20 ${isDarkMode ? 'dark:border-white/30' : 'light:bg'} text-black hover:shadow-lg cursor-pointer hover:bg-gradient-to-b from-emerald-600 to-green-800 rounded-2xl duration-700 p-10 mb-10 h-[370px] w-[275px] sm:w-[300px]`}>
                                                         <h4 className={`${isDarkMode ? 'dark:text-white' : 'light:bg'} text-black text-[16px] font-bold pb-4`}>For Families</h4>
                                                         <p className={`${isDarkMode ? 'dark:text-white/60' : 'light:bg'} text-black text-[11px] font-semibold text-black/40 pb-8`}>Keep loved ones informed effortlessly</p>
                                                         <p className={`pb-8 ${isDarkMode ? 'dark:text-white' : 'light:bg'} text-black`}>
