@@ -94,7 +94,7 @@ const Home = () => {
                                                                 <Link to="/" className={`bg-green-500 p-4 w-[200px] shadow-lg rounded-xl hover:bg-green-700 duration-700 my-6 flex items-center justify-center m-auto md:mt-8 md:m-0 font-bold`}>Try it Now</Link>
 
                                                         </div>
-                                                        <img src="./src/assets/qrcodeill.svg" className="w-[300px] sm:w-[400px] m-auto" alt="Qr Code illustration" />
+                                                        <img src="src\assets\qrcodeill.svg" className="w-[300px] sm:w-[400px] m-auto" alt="Qr Code illustration" />
                                                 </div>
                                         </section>
 
@@ -156,7 +156,7 @@ const Home = () => {
                                         <section className="bg-[#030d06] border-t border-t-white/30 p-20 py-[70px]">
                                                 <div className="text-center">
                                                         <StarPoint className="m-auto text-green-600" size={100} />
-                                                        <p className="text-white text-[15rem] sm:text-[2rem] font-bold w-[200px] m-auto">Say goodbye to typing long URLs.</p>
+                                                        <p className="text-white text-[1.5rem] sm:text-[2rem] font-bold w-[200px] m-auto">Say goodbye to typing long URLs.</p>
                                                 </div>
                                         </section>
                                 </main>
