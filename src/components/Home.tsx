@@ -6,6 +6,7 @@ import Header from "./Header";
 import Headroom from "react-headroom";
 import 'aos/dist/aos.css';
 import Email from 'mdi-react/EmailOutlineIcon';
+import myImage from "../assets/qr-code.svg";
 import Github from 'mdi-react/GithubIcon';
 import Twitter from 'mdi-react/TwitterIcon';
 import Phone from 'mdi-react/PhoneIcon';
@@ -94,7 +95,7 @@ const Home = () => {
                                                                 <Link to="/" className={`bg-green-500 p-4 w-[200px] shadow-lg rounded-xl hover:bg-green-700 duration-700 mt-6 flex items-center justify-center m-auto md:mt-8 md:m-0 font-bold`}>Try it Now</Link>
 
                                                         </div>
-                                                        <img src="./src/assets/qr-code.svg" className="md:w-[50%] m-auto" alt="Qr Code illustration" />
+                                                        <img src={myImage} className="md:w-[50%] m-auto" alt="Qr Code illustration" />
                                                 </div>
                                         </motion.section>
 
