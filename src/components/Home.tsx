@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Header from "./Header";
 import Headroom from "react-headroom";
-import 'aos/dist/aos.css';
+import GridLoader from "react-spinners/GridLoader";
 import Email from 'mdi-react/EmailOutlineIcon';
 import myImage from "../assets/qr-code.svg";
 import Github from 'mdi-react/GithubIcon';
@@ -13,6 +13,7 @@ import Phone from 'mdi-react/PhoneIcon';
 import LinkedIn from 'mdi-react/LinkedinIcon';
 import CheckBox from 'mdi-react/CheckboxMarkedCircleOutlineIcon';
 import StarPoint from 'mdi-react/StarFourPointsCircleOutlineIcon'
+
 
 
 const Home = () => {
@@ -27,11 +28,22 @@ const Home = () => {
                 }
         }, []);
 
+        const [loading, setLoading] = useState(false);
+        useEffect(() => {
+                setLoading(true)
+                setTimeout(()=>{
+                        setLoading(false)
+                }, 7000)
+        }, [])
         return (
                 <Fragment>
                         <Helmet>
                                 <title>Qr Code Generator - Home</title>
                         </Helmet>
+                        {
+                                loading ? 
+                                <GridLoader className="absolute m-auto top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] h-screen-[100vh] self-center" color="#36d7b7" loading={loading} size={12} />
+                                :
 
                         <div className={`font-bodyFont duration-500 ${isDarkMode ? 'dark:bg-[#030d06]' : 'light:bg'} bg-[#f3f3f3] h-screen`}>
 
@@ -92,7 +104,7 @@ const Home = () => {
                                                                         QR codes that leave a lasting impression. From websites to social media, menus to promotional offers, our cutting-edge QR code solutions make interactions effortless and memorable.
 
                                                                 </p>
-                                                                <Link to="/" className={`bg-green-500 p-4 w-[200px] shadow-lg rounded-xl hover:bg-green-700 duration-700 mt-6 flex items-center justify-center m-auto md:mt-8 md:m-0 font-bold`}>Try it Now</Link>
+                                                                <Link to="/" className={`bg-green-500 p-4 w-[200px] shadow-lg rounded-xl hover:bg-green-700 duration-700 mt-6 flex items-center justify-center m-auto md:mt-8 md:m-0`}>Try it Now</Link>
 
                                                         </div>
                                                         <img src={myImage} className="md:w-[50%] m-auto" alt="Qr Code illustration" />
@@ -165,9 +177,10 @@ const Home = () => {
                                                 </div>
                                         </section>
                                 </main>
-
+                                
                                 <footer className={`flex justify-between ${isDarkMode ? 'dark:bg-[#030a05]' : 'light:bg'} duration-700 text-[10px] p-6 px-6 md:px-10 border-t border-t-white`}>
-                                        <div className="flex">
+                                      <div className="flex">
+                                                
                                                 <p className={`pr-2 ${isDarkMode ? 'dark:text-white' : 'light:bg'} text-black`}>
                                                         &copy;2023
                                                 </p>
@@ -194,6 +207,7 @@ const Home = () => {
                                         </div>
                                 </footer>
                         </div>
+                        }
                 </Fragment>
         );
 };
