@@ -52,7 +52,7 @@ export default function Header() {
                         className={`font-semibold shadow-lg duration-500 ${isDarkMode ? 'dark:bg-[#030d06]' : 'light:bg'} bg-white/100 p-4 px-6 md:px-10 flex justify-between border-b border-b-white/30 top-0 fixed w-full`}>
                         <div
 
-                                className="flex">
+                                className="flex pt-1">
 
                                 <motion.svg className="fill-green-500 mr-2" width="20px" height="20px" viewBox="0 0 14 14" role="img" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                         variants={svgVariants}
@@ -90,7 +90,7 @@ export default function Header() {
                                 animate="visible"
                                 transition={{ type: 'spring', stiffness: 300 }}
                                 onClick={handleThemeToggle}
-                                className="fill-green-500 w-10 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>theme-light-dark</title>
+                                className="fill-green-500 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>theme-light-dark</title>
                                 <motion.path d="M7.5,2C5.71,3.15 4.5,5.18 4.5,7.5C4.5,9.82 5.71,11.85 7.53,13C4.46,13 2,10.54 2,7.5A5.5,5.5 0 0,1 7.5,2" 
                                 variants={pathVariants}
                                 

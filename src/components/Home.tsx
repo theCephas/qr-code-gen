@@ -78,7 +78,7 @@ const Home = () => {
                                         <motion.section
                                                 initial={{ opacity: 0 }}
                                                 animate={{ opacity: 1 }}
-                                                transition={{ delay: 2, duration: 1.4 }}
+                                                // transition={{ delay: 2, duration: 1.4 }}
                                                 className={`bg-gradient-to-b from-emerald-100 to-green-300 px-6 md:px-10 py-10 shadow-lg`}>
                                                 <p className={`font-bold text-[1.2rem] w-[275px] sm:w-[400px] flex items-center m-auto text-black sm:text-[30px] text-center tracking-wider`}>
                                                         Fast.Downloadable.Standard
@@ -91,10 +91,10 @@ const Home = () => {
                                                                         QR codes that leave a lasting impression. From websites to social media, menus to promotional offers, our cutting-edge QR code solutions make interactions effortless and memorable.
 
                                                                 </p>
-                                                                <Link to="/" className={`bg-green-500 p-4 w-[200px] shadow-lg rounded-xl hover:bg-green-700 duration-700 my-6 flex items-center justify-center m-auto md:mt-8 md:m-0 font-bold`}>Try it Now</Link>
+                                                                <Link to="/" className={`bg-green-500 p-4 w-[200px] shadow-lg rounded-xl hover:bg-green-700 duration-700 mt-6 flex items-center justify-center m-auto md:mt-8 md:m-0 font-bold`}>Try it Now</Link>
 
                                                         </div>
-                                                        <img src="/qrcode.svg" className="w-[300px] sm:w-[400px] m-auto" alt="Qr Code illustration" />
+                                                        <img src="src\assets\QR-Code-color.svg" className="md:w-[50%] m-auto" alt="Qr Code illustration" />
                                                 </div>
                                         </motion.section>
 
@@ -160,7 +160,7 @@ const Home = () => {
                                         <section className="bg-[#030d06] border-t border-t-white/30 p-20 py-[70px]">
                                                 <div className="text-center">
                                                         <StarPoint className="m-auto text-green-600" size={100} />
-                                                        <p className="text-white text-[1.5rem] sm:text-[2rem] font-bold w-[200px] m-auto">Say goodbye to typing long URLs.</p>
+                                                        <p className="text-white text-[1.5rem] sm:text-[2rem] font-bold w-[200px] m-auto py-8 leading-11">Say goodbye to typing long URLs.</p>
                                                 </div>
                                         </section>
                                 </main>
