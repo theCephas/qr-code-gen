@@ -94,7 +94,7 @@ const Home = () => {
                                                                 <Link to="/" className={`bg-green-500 p-4 w-[200px] shadow-lg rounded-xl hover:bg-green-700 duration-700 mt-6 flex items-center justify-center m-auto md:mt-8 md:m-0 font-bold`}>Try it Now</Link>
 
                                                         </div>
-                                                        <img src="src\assets\QR-Code-color.svg" className="md:w-[50%] m-auto" alt="Qr Code illustration" />
+                                                        <img src="./src/assets/qr-code.svg" className="md:w-[50%] m-auto" alt="Qr Code illustration" />
                                                 </div>
                                         </motion.section>
 
