@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 import Header from "./Header";
 import Headroom from "react-headroom";
 import GridLoader from "react-spinners/GridLoader";
-import Email from 'mdi-react/EmailOutlineIcon';
 import myImage from "../assets/qr-code.svg";
+import Email from 'mdi-react/EmailOutlineIcon';
 import Github from 'mdi-react/GithubIcon';
 import Twitter from 'mdi-react/TwitterIcon';
 import Phone from 'mdi-react/PhoneIcon';
@@ -33,8 +33,24 @@ const Home = () => {
                 setLoading(true)
                 setTimeout(()=>{
                         setLoading(false)
-                }, 7000)
+                }, 2000)
         }, [])
+
+        // // const containerVariants = {
+        // //         hidden: {
+        // //                 opacity: 0,
+        // //         },
+        // //         visible: {
+        // //                 opacity: 1,
+        // //                 transition: { delay: 0.8, duration: 0.6 }
+        // //         },
+        // //         exit: {
+        // //                 x: '-100vw',
+        // //                 transition: {
+        // //                         ease: "easeInOut"
+        // //                 }
+        // //         }
+        // }
         return (
                 <Fragment>
                         <Helmet>
@@ -45,7 +61,12 @@ const Home = () => {
                                 <GridLoader className="absolute m-auto top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] h-screen-[100vh] self-center" color="#36d7b7" loading={loading} size={12} />
                                 :
 
-                        <div className={`font-bodyFont duration-500 ${isDarkMode ? 'dark:bg-[#030d06]' : 'light:bg'} bg-[#f3f3f3] h-screen`}>
+                        <motion.div 
+                        // variants={containerVariants}
+                        // initial="hidden"
+                        // animate="visible"
+                        // exit="exit"
+                        className={`font-bodyFont duration-500 ${isDarkMode ? 'dark:bg-[#030d06]' : 'light:bg'} bg-[#f3f3f3] h-screen`}>
 
                                 <Headroom>
                                         <Header />
@@ -58,14 +79,14 @@ const Home = () => {
                                                         initial={{ y: -200 }}
                                                         animate={{ y: -10 }}
                                                         transition={{ delay: 1 }}
-                                                        className={`text-black text-center after:block after:w-[4rem] after:rounded-full after:h-[3px] after:my-[1.5rem] after:mx-auto after:bg-black content-none pt-10 px-6 sm:px-10 font-semibold  ${isDarkMode ? 'dark:after:bg-white' : 'light:bg'} ${isDarkMode ? 'dark:text-white' : 'light:bg'}`}>Free online
+                                                        className={`text-black text-center after:block after:w-[4rem] after:rounded-full after:h-[3px] after:my-[1.5rem] after:mx-auto after:bg-black content-none pt-16 px-6 sm:px-10 font-semibold  ${isDarkMode ? 'dark:after:bg-white' : 'light:bg'} ${isDarkMode ? 'dark:text-white' : 'light:bg'}`}>Free online
                                                         <span className={`text-green-500`}> Qr Code </span>
                                                         Generator</motion.p>
                                                 <motion.p
                                                         initial={{ opacity: 0 }}
                                                         animate={{ opacity: 1 }}
                                                         transition={{ delay: 1.2, duration: 2 }}
-                                                        className={`text-green-500 font-bold text-[20px] leading-9 mx-6 sm:mx-auto md:text-[21px] md:w-[600px] m-auto text-center py-4`}>Generate free, customized, and well-presentable
+                                                        className={`text-black ${isDarkMode ? 'dark:text-green-500' : 'light:bg'} font-bold text-[20px] leading-9 mx-6 sm:mx-auto md:text-[21px] md:w-[600px] m-auto text-center py-4`}>Generate free, customized, and well-presentable
                                                         <br /> qr codes to
                                                         friends, families, and business associates. 
                                                 </motion.p>
@@ -77,7 +98,7 @@ const Home = () => {
                                                         qrCode.Gen is created to generate beautiful and usable qr codes for friends, families, business individuals, clients, and customers.
                                                         It enables quick access to websites, folders, and many more .
                                                 </motion.p>
-                                                <Link to="/">
+                                                <Link to="/Qrcode">
                                                         <motion.button
                                                                 initial={{ x: '-100vw' }}
                                                                 animate={{ x: 0 }}
@@ -104,7 +125,7 @@ const Home = () => {
                                                                         QR codes that leave a lasting impression. From websites to social media, menus to promotional offers, our cutting-edge QR code solutions make interactions effortless and memorable.
 
                                                                 </p>
-                                                                <Link to="/" className={`bg-green-500 p-4 w-[200px] shadow-lg rounded-xl hover:bg-green-700 duration-700 mt-6 flex items-center justify-center m-auto md:mt-8 md:m-0`}>Try it Now</Link>
+                                                                <Link to="/Qrcode" className={`bg-green-500 p-4 w-[200px] shadow-lg rounded-xl hover:bg-green-600 duration-700 mt-6 flex items-center justify-center m-auto md:mt-8 md:m-0`}>Try it Now</Link>
 
                                                         </div>
                                                         <img src={myImage} className="md:w-[50%] m-auto" alt="Qr Code illustration" />
@@ -206,7 +227,7 @@ const Home = () => {
                                                 </a>
                                         </div>
                                 </footer>
-                        </div>
+                        </motion.div>
                         }
                 </Fragment>
         );
