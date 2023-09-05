@@ -36,21 +36,6 @@ const Home = () => {
                 }, 2000)
         }, [])
 
-        // // const containerVariants = {
-        // //         hidden: {
-        // //                 opacity: 0,
-        // //         },
-        // //         visible: {
-        // //                 opacity: 1,
-        // //                 transition: { delay: 0.8, duration: 0.6 }
-        // //         },
-        // //         exit: {
-        // //                 x: '-100vw',
-        // //                 transition: {
-        // //                         ease: "easeInOut"
-        // //                 }
-        // //         }
-        // }
         return (
                 <Fragment>
                         <Helmet>
@@ -62,10 +47,7 @@ const Home = () => {
                                 :
 
                         <motion.div 
-                        // variants={containerVariants}
-                        // initial="hidden"
-                        // animate="visible"
-                        // exit="exit"
+                       
                         className={`font-bodyFont duration-500 ${isDarkMode ? 'dark:bg-[#030d06]' : 'light:bg'} bg-[#f3f3f3] h-screen`}>
 
                                 <Headroom>

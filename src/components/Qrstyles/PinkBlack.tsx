@@ -6,15 +6,18 @@ import Github from 'mdi-react/GithubIcon';
 import Twitter from 'mdi-react/TwitterIcon';
 import Phone from 'mdi-react/PhoneIcon';
 import LinkedIn from 'mdi-react/LinkedinIcon';
+import ButterflyOutline from "../../assets/butterfly-outline.svg"
+// import ButterflyOutline from "mdi-react/ButterflyOutlineIcon"
 
-export default function QrCode() {
+export default function PinkBlack() {
         const qrRef = useRef<HTMLDivElement | null>(null);
         const [url, setUrl] = useState("");
+        const icon = ButterflyOutline
 
         const downloadQRCode = (evt: React.FormEvent) => {
                 evt.preventDefault();
 
-               
+
                 const canvas = qrRef.current?.querySelector("canvas");
                 const image = canvas?.toDataURL("image/png");
                 if (image) {
@@ -24,7 +27,7 @@ export default function QrCode() {
                         document.body.appendChild(anchor);
                         anchor.click();
                         document.body.removeChild(anchor);
-                      } 
+                }
 
                 setUrl("");
         };
@@ -35,8 +38,17 @@ export default function QrCode() {
                         className="rounded-xl mb-8"
                         size={270}
                         value={url}
-                        bgColor="white"
+                        bgColor="Pink"
                         fgColor="black"
+                        level="Q"
+                        includeMargin
+                        imageSettings={{
+                                src: icon,
+                                width: 300 * 0.1,
+                                height: 300 * 0.1,
+                                excavate: true
+                        }
+                        }
                 />
 
 
@@ -60,16 +72,7 @@ export default function QrCode() {
                                         ref={qrRef}
                                         className={`bg-{#e3e3e3} absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] `}>
 
-                                                {qrCode}
-                                        {/* // level="H"
-                                        // includeMargin
-                                        // imageSettings={{ */}
-                                        {/* //         src: icon,
-                                        //         excavate: true,
-                                        //         width: 300 * 0.1,
-                                        //         height: 300 * 0.1, */}
-
-                                        {/* // }} */}
+                                        {qrCode}
 
                                         <form onSubmit={downloadQRCode} className="flex flex-col
                                         
