@@ -14,7 +14,7 @@ export default function QrCode() {
         const downloadQRCode = (evt: React.FormEvent) => {
                 evt.preventDefault();
 
-               
+
                 const canvas = qrRef.current?.querySelector("canvas");
                 const image = canvas?.toDataURL("image/png");
                 if (image) {
@@ -24,7 +24,7 @@ export default function QrCode() {
                         document.body.appendChild(anchor);
                         anchor.click();
                         document.body.removeChild(anchor);
-                      } 
+                }
 
                 setUrl("");
         };
@@ -32,7 +32,7 @@ export default function QrCode() {
         const qrCode =
                 <QRCode
                         id="qrCodeId"
-                        className="rounded-xl mb-8"
+                        className="rounded-xl m-auto mb-8"
                         size={270}
                         value={url}
                         bgColor="white"
@@ -60,17 +60,7 @@ export default function QrCode() {
                                         ref={qrRef}
                                         className={`bg-{#e3e3e3} absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] `}>
 
-                                                {qrCode}
-                                        {/* // level="H"
-                                        // includeMargin
-                                        // imageSettings={{ */}
-                                        {/* //         src: icon,
-                                        //         excavate: true,
-                                        //         width: 300 * 0.1,
-                                        //         height: 300 * 0.1, */}
-
-                                        {/* // }} */}
-
+                                        {qrCode}
                                         <form onSubmit={downloadQRCode} className="flex flex-col
                                         
                                         ">
@@ -80,12 +70,12 @@ export default function QrCode() {
                                                         value={url}
                                                         onChange={(e) => setUrl(e.target.value)}
                                                         placeholder="https://example.com"
-                                                        className="border-b border-b-black/50 border-white  pb-3 py-2 px-3 bg-transparent focus:outline-none focus:border-white transition ease-in-out duration-700 focus:-translate-y-1 focus:scale-105 w-auto italic mb-6"
+                                                        className="border-b border-b-black/50 border-white  pb-3 py-2 px-3 bg-transparent focus:outline-none focus:border-white transition ease-in-out text-sm duration-700 focus:-translate-y-1 focus:scale-105 w-[270px] m-auto mb-6"
                                                 />
 
                                                 <button
                                                         type="submit"
-                                                        className="bg-green-500 p-4 w-[200px] hover:bg-green-600 hover:duration-700 shadow-lg rounded-xl flex justify-center m-auto"
+                                                        className="bg-green-500 p-4 w-[200px] hover:bg-green-600 hover:duration-700 shadow-lg rounded-xl flex justify-center m-auto text-sm"
                                                 >Download QR Code</button>
                                         </form>
                                 </div>

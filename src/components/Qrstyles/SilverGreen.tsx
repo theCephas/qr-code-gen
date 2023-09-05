@@ -35,7 +35,7 @@ export default function SilverGreen() {
         const qrCode =
                 <QRCode
                         id="qrCodeId"
-                        className="rounded-xl mb-8"
+                        className="rounded-xl m-auto mb-8"
                         size={270}
                         value={url}
                         bgColor="Silver"
@@ -82,12 +82,12 @@ export default function SilverGreen() {
                                                         value={url}
                                                         onChange={(e) => setUrl(e.target.value)}
                                                         placeholder="https://example.com"
-                                                        className="border-b border-b-black/50 border-white  pb-3 py-2 px-3 bg-transparent focus:outline-none focus:border-white transition ease-in-out duration-700 focus:-translate-y-1 focus:scale-105 w-auto italic mb-6"
+                                                        className="border-b border-b-black/50 border-white text-sm pb-3 py-2 px-3 bg-transparent focus:outline-none focus:border-white transition ease-in-out duration-700 focus:-translate-y-1 focus:scale-105 w-[270px] m-auto mb-6"
                                                 />
 
                                                 <button
                                                         type="submit"
-                                                        className="bg-green-500 p-4 w-[200px] hover:bg-green-600 hover:duration-700 shadow-lg rounded-xl flex justify-center m-auto"
+                                                        className="bg-green-500 p-4 w-[200px] hover:bg-green-600 hover:duration-700 shadow-lg rounded-xl flex justify-center m-auto text-sm"
                                                 >Download QR Code</button>
                                         </form>
                                 </div>

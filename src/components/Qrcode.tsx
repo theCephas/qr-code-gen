@@ -70,7 +70,7 @@ export default function Qrcode() {
                                                                                 initial={{ x: '-100vw' }}
                                                                                 animate={{ x: 0 }}
                                                                                 transition={{ delay: 1.4, type: 'spring', stiffness: 120 }}
-                                                                                className={`bg-green-500 p-4 w-auto hover:bg-green-600 hover:duration-700 shadow-lg rounded-xl mt-10 flex justify-center m-auto`}
+                                                                                className={`bg-green-500 p-4 text-sm w-auto hover:bg-green-600 hover:duration-700 shadow-lg rounded-xl mt-10 flex justify-center m-auto`}
                                                                         >Create a very basic qr code</motion.button>
                                                                 </Link>
                                                         </div>
@@ -91,7 +91,7 @@ export default function Qrcode() {
                                                                                                 initial={{ x: '-100vw' }}
                                                                                                 animate={{ x: 0 }}
                                                                                                 transition={{ delay: 1.4, type: 'spring', stiffness: 120 }}
-                                                                                                className={`bg-green-500 p-4 w-[100px] hover:bg-green-600 hover:duration-700 shadow-lg rounded-xl mt-4 flex justify-center m-auto`}
+                                                                                                className={`bg-green-500 py-3 px-6 text-sm w-[120px] hover:bg-green-600 hover:duration-700 shadow-lg rounded-xl mt-4 flex justify-center m-auto`}
                                                                                         >Available</motion.button>
                                                                                 </Link>
                                                                         </div>
@@ -110,7 +110,7 @@ export default function Qrcode() {
                                                                                         initial={{ x: '-100vw' }}
                                                                                         animate={{ x: 0 }}
                                                                                         transition={{ delay: 1.4, type: 'spring', stiffness: 120 }}
-                                                                                        className={`bg-green-300 cursor-not-allowed p-4 w-[100px] shadow-lg rounded-xl mt-4 flex justify-center m-auto`}
+                                                                                        className={`bg-green-300 cursor-not-allowed py-3 px-6 text-sm w-[120px] shadow-lg rounded-xl mt-4 flex justify-center m-auto`}
                                                                                 >Unavailable</motion.button>
 
                                                                         </div>
@@ -122,15 +122,15 @@ export default function Qrcode() {
                                                                                                 className="cursor-pointer rounded-xl border"
                                                                                                 alt="Green Yellow"
                                                                                         />
-                                                                                        <div className="absolute inset-0 bg-black/50 opacity-0 cursor-pointer hover:opacity-100 rounded-xl border"></div>
+                                                                                         <div className="absolute inset-0 bg-black/50 cursor-not-allowed hover:opacity-100 rounded-xl border"></div>
                                                                                 </div>
                                                                                 <Link to="/PinkBlack">
-                                                                                        <motion.button
-                                                                                                initial={{ x: '-100vw' }}
-                                                                                                animate={{ x: 0 }}
-                                                                                                transition={{ delay: 1.4, type: 'spring', stiffness: 120 }}
-                                                                                                className={`bg-green-500 p-4 w-[100px] hover:bg-green-600 hover:duration-700 shadow-lg rounded-xl mt-4 flex justify-center m-auto`}
-                                                                                        >Available</motion.button>
+                                                                                <motion.button
+                                                                                        initial={{ x: '-100vw' }}
+                                                                                        animate={{ x: 0 }}
+                                                                                        transition={{ delay: 1.4, type: 'spring', stiffness: 120 }}
+                                                                                        className={`bg-green-300 cursor-not-allowed py-3 px-6 text-sm w-[120px] shadow-lg rounded-xl mt-4 flex justify-center m-auto`}
+                                                                                >Unavailable</motion.button>
                                                                                 </Link>
                                                                         </div>
 
@@ -148,7 +148,7 @@ export default function Qrcode() {
                                                                                                 initial={{ x: '-100vw' }}
                                                                                                 animate={{ x: 0 }}
                                                                                                 transition={{ delay: 1.4, type: 'spring', stiffness: 120 }}
-                                                                                                className={`bg-green-500 p-4 w-[100px] hover:bg-green-600 hover:duration-700 shadow-lg rounded-xl mt-4 flex justify-center m-auto`}
+                                                                                                className={`bg-green-500 py-3 px-6 text-sm w-[120px] hover:bg-green-600 hover:duration-700 shadow-lg rounded-xl mt-4 flex justify-center m-auto`}
                                                                                         >Available</motion.button>
                                                                                 </Link>
                                                                         </div>
@@ -159,15 +159,15 @@ export default function Qrcode() {
                                                                                                 className="cursor-pointer rounded-xl border"
                                                                                                 alt="Indigo grey"
                                                                                         />
-                                                                                        <div className="absolute inset-0 bg-black/50 opacity-0 cursor-pointer hover:opacity-100 rounded-xl border"></div>
+                                                                                         <div className="absolute inset-0 bg-black/50 cursor-not-allowed hover:opacity-100 rounded-xl border"></div>
                                                                                 </div>
                                                                                 <Link to="/OrangeBlack">
-                                                                                        <motion.button
-                                                                                                initial={{ x: '-100vw' }}
-                                                                                                animate={{ x: 0 }}
-                                                                                                transition={{ delay: 1.4, type: 'spring', stiffness: 120 }}
-                                                                                                className={`bg-green-500 p-4 w-[100px] hover:bg-green-600 hover:duration-700 shadow-lg rounded-xl mt-4 flex justify-center m-auto`}
-                                                                                        >Available</motion.button>
+                                                                                <motion.button
+                                                                                        initial={{ x: '-100vw' }}
+                                                                                        animate={{ x: 0 }}
+                                                                                        transition={{ delay: 1.4, type: 'spring', stiffness: 120 }}
+                                                                                        className={`bg-green-300 cursor-not-allowed py-3 px-6 text-sm w-[120px] shadow-lg rounded-xl mt-4 flex justify-center m-auto`}
+                                                                                >Unavailable</motion.button>
                                                                                 </Link>
 
                                                                         </div>
@@ -186,7 +186,7 @@ export default function Qrcode() {
                                                                                         initial={{ x: '-100vw' }}
                                                                                         animate={{ x: 0 }}
                                                                                         transition={{ delay: 1.4, type: 'spring', stiffness: 120 }}
-                                                                                        className={`bg-green-300 p-4 w-[100px] cursor-not-allowed shadow-lg rounded-xl mt-4 flex justify-center m-auto`}
+                                                                                        className={`bg-green-300 py-3 px-6 text-sm w-[120px] cursor-not-allowed shadow-lg rounded-xl mt-4 flex justify-center m-auto`}
                                                                                 >Unavailable</motion.button>
 
                                                                         </div>
@@ -205,7 +205,7 @@ export default function Qrcode() {
                                                                                         initial={{ x: '-100vw' }}
                                                                                         animate={{ x: 0 }}
                                                                                         transition={{ delay: 1.4, type: 'spring', stiffness: 120 }}
-                                                                                        className={`bg-green-300 p-4 w-[100px] cursor-not-allowed shadow-lg rounded-xl mt-4 flex justify-center m-auto`}
+                                                                                        className={`bg-green-300 py-3 px-6 text-sm w-[120px] cursor-not-allowed shadow-lg rounded-xl mt-4 flex justify-center m-auto`}
                                                                                 >Unavailable</motion.button>
 
                                                                         </div>
@@ -226,14 +226,14 @@ export default function Qrcode() {
                                                                                         initial={{ x: '-100vw' }}
                                                                                         animate={{ x: 0 }}
                                                                                         transition={{ delay: 1.4, type: 'spring', stiffness: 120 }}
-                                                                                        className={`bg-green-300 p-4 w-[100px] cursor-not-allowed shadow-lg rounded-xl mt-4 flex justify-center m-auto`}
+                                                                                        className={`bg-green-300 py-3 px-6 text-sm w-[120px] cursor-not-allowed shadow-lg rounded-xl mt-4 flex justify-center m-auto`}
                                                                                 >Unavailable</motion.button>
 
                                                                         </div>
                                                                 </div>
                                                         </section>
 
-                                                        <footer className={`flex justify-between ${isDarkMode ? 'dark:bg-[#030a05]' : 'light:bg'} border-t border-t-black/20 ${isDarkMode ? 'dark:border-t-white/40' : 'light:bg'} duration-700 text-[10px] p-6 px-6 md:px-10 border-t border-t-white`}>
+                                                        <footer className={`flex justify-between ${isDarkMode ? 'dark:bg-[#030a05]' : 'light:bg'} border-t border-t-black/40 ${isDarkMode ? 'dark:border-t-white/40' : 'light:bg'} duration-700 text-[10px] p-6 px-6 md:px-10 border-t border-t-white`}>
                                                                 <div className="flex">
 
                                                                         <p className={`pr-2 ${isDarkMode ? 'dark:text-white' : 'light:bg'} text-black`}>
