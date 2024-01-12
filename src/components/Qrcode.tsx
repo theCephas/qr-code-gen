@@ -17,8 +17,6 @@ import Github from "mdi-react/GithubIcon";
 import Twitter from "mdi-react/TwitterIcon";
 import Phone from "mdi-react/PhoneIcon";
 import LinkedIn from "mdi-react/LinkedinIcon";
-// import  QRCode  from "qrcode.react";
-// import ButterflyOutline from "../assets/butterfly-outline.svg"
 
 export default function Qrcode() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -337,23 +335,4 @@ export default function Qrcode() {
       )}
     </>
   );
-}
-{
-  /* <QRCode
-        // id="qrCodeId"
-        className="m-auto rounded-xl mt-[100px]"
-        size={300}
-        value={"https://google.com"}
-        bgColor="silver"
-        fgColor="green"
-        level="H"
-        // includeMargin
-        imageSettings={{
-                src: icon,
-                excavate: true,
-                width: 300 * 0.1,
-                height: 300 * 0.1,
-                
-        }}
-/> */
 }
